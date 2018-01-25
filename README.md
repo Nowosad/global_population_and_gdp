@@ -1,0 +1,1 @@
+ # Global dataset of gridded population and GDP (1980-2010 estimations and 2020-2100 scenarios) 
