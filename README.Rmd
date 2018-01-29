@@ -1,0 +1,41 @@
+---
+title: "Global dataset of gridded population and GDP (1980-2010 estimations and 2020-2100 scenarios)"
+output: github_document
+---
+
+Short description of the package
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, message=FALSE}
+library(tmap)
+library(tmaptools)
+library(raster)
+```
+
+```{r}
+p1 = raster("data/p_2010.tif")
+p1_sum_pop = cellStats(p1, "sum")
+
+tm_shape(p1) +
+  tm_raster(col = names(p1), style = "kmeans", 
+            palette = "PuRd", n = 10, contrast = c(0, 0.95) ,
+            title = paste0("Year 2010\n",
+                           "Global population (mln): ", round(p1_sum_pop, 2), "\n",
+                           "Population (mln):")) + 
+  tm_format_World()
+```
+
+
+## Data
+
+<!-- data links -->
+
+
+## Reference
+
+- Data source: http://www.cger.nies.go.jp/gcp/population-and-gdp.html
+- Murakami, D. and Yamagata, Y. (2016) Estimation of gridded population and GDP scenarios with spatially explicit statistical downscaling, ArXiv, 1610.09041, URL: https://arxiv.org/abs/1610.09041.
