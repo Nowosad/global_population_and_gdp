@@ -21,11 +21,16 @@ raw_data = st_read("raw_data/grid.shp", stringsAsFactors = FALSE) %>%
 # create points on surface ------------------------------------------------
 raw_data_pos = st_point_on_surface(raw_data) %>% 
   select(-gID, -ISO3, -px, -py) %>% 
-  mutate(grid_id = st_intersects(., regular_grid) %>% flatten_int())
+  select(-(p2_1980:p2_2010), -(p3_1980:p3_2010)) %>% 
+  mutate(grid_id = st_intersects(., regular_grid) %>% flatten_int()) %>% 
+  st_set_geometry(NULL)
+
+# update names ------------------------------------------------------------
+p1_estimation_names = c("p1_1980", "p1_1990", "p1_2000", "p1_2010")
+colnames(raw_data_pos)[colnames(raw_data_pos) %in% p1_estimation_names] = c("p_1980", "p_1990", "p_2000", "p_2010")
 
 # calculate grouped vars --------------------------------------------------
 raw_data_pos_vars = raw_data_pos %>% 
-  st_set_geometry(NULL) %>% 
   group_by(grid_id) %>% 
   summarize_all(sum)
 
