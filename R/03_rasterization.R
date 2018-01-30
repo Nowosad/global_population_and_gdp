@@ -19,3 +19,7 @@ my_raster_template = raster(extent(regular_grid_data), resolution = 0.5, crs = "
 # rasterization -----------------------------------------------------------
 colnames(regular_grid_data)[-c(length(regular_grid_data))] %>% 
   map(bulk_rasterization, regular_grid_data, my_raster_template)
+
+# compress ----------------------------------------------------------------
+all_rasters = dir("data", pattern = "*.tif", full.names = TRUE)
+zip(zipfile = "data/global_population_and_gdp.zip", files = all_rasters)
