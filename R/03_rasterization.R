@@ -17,5 +17,5 @@ regular_grid_data = st_read("data/global_population_and_gdp.gpkg")
 my_raster_template = raster(extent(regular_grid_data), resolution = 0.5, crs = "+init=epsg:4326")
 
 # rasterization -----------------------------------------------------------
-colnames(regular_grid_data)[-c(1, length(regular_grid_data))] %>% 
+colnames(regular_grid_data)[-c(length(regular_grid_data))] %>% 
   map(bulk_rasterization, regular_grid_data, my_raster_template)
