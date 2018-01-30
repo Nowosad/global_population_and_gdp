@@ -18,7 +18,8 @@ The files below includes gridded populations (unit: millions) and GDPs (unit: PP
 -   [Vector data](http://sil.uc.edu/cms/data/uploads/software_data/popgrids/global_population_and_gdp.gpkg) - one .gpkg file containing all the data
 -   [Raster data](http://sil.uc.edu/cms/data/uploads/software_data/popgrids/global_population_and_gdp.zip) - 62 .tif files for each year, variable, and scenario
 
-<!-- ## R package -->
+Data is also available as raster objects in the **popgrids** R package - <https://github.com/Nowosad/popgrids>.
+
 Code
 ----
 
