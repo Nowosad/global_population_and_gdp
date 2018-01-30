@@ -16,7 +16,7 @@ Data
 The files below includes gridded populations (unit: millions) and GDPs (unit: PPP, Billion US$2005/yr) for years 1980-2100. Values from 1980-2010 were estimated by downscaling country-level data, while those in 2020-2100 are estimated by downscaling country-level data from SSP1, SSP2, and SSP3 scenarios. Names of the columns or files indicate the variables: `p_1980` to `p_2010` - estimations of populations; `g_1980` to `g_2010` - estimations of GDPs; `p1_2020`, `p2_2020`, `p3_2020` - projections of populations under SSP1, SSP2, and SSP3 scenarios, respectively; `g1_2020`, `g2_2020`, `g3_2020` - projections of GDPs under SSP1, SSP2, and SSP3 scenarios, respectively.
 
 -   [Vector data]() - one .gpkg file containing all the data
--   [Raster data]() - 70 .tif files for each year, variable, and scenario
+-   [Raster data]() - 62 .tif files for each year, variable, and scenario
 
 <!-- ## R package -->
 Code
