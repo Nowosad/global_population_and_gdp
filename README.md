@@ -1,7 +1,7 @@
 Global dataset of gridded population and GDP (1980-2010 estimations and 2020-2100 scenarios)
 ================
 
-This dataset consists 0.5 × 0.5 degree grids of:
+This dataset consists of 0.5 × 0.5 degree grids of:
 
 1.  Global population and GDP estimations for years 1980-2010 created by downscaling actual populations and GDPs by country
 2.  Global population and GDP projections for years 2020-2100 created by downscaling projected populations and GDPs under three shared socioeconomic pathways (SSP): SSP1; SSP2; and SSP3 (source: [SSP database version 1](https://secure.iiasa.ac.at/web-apps/ene/SspDb/dsd?Action=htmlpage&page=about))
