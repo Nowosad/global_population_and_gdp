@@ -6,7 +6,7 @@ This dataset consists of 0.5 × 0.5 degree grids of:
 1.  Global population and GDP estimations for years 1980-2010 created by downscaling actual populations and GDPs by country
 2.  Global population and GDP projections for years 2020-2100 created by downscaling projected populations and GDPs under three shared socioeconomic pathways (SSP): SSP1; SSP2; and SSP3 (source: [SSP database version 1](https://secure.iiasa.ac.at/web-apps/ene/SspDb/dsd?Action=htmlpage&page=about))
 
-The dataset is modified [Global dataset of gridded population and GDP scenarios, version 3](http://www.cger.nies.go.jp/gcp/population-and-gdp.html). While the original dataset is a shapefile of 0.5 × 0.5 degree grids **masked by countries**, the new one contains a regular grid in form of a vector (.gpkg) and raster (.tif) files.
+The dataset is modified [Global dataset of gridded population and GDP scenarios, version 3](https://warp.ndl.go.jp/web/20220409084331/cger.nies.go.jp/gcp/population-and-gdp.html). While the original dataset is a shapefile of 0.5 × 0.5 degree grids **masked by countries**, the new one contains a regular grid in form of a vector (.gpkg) and raster (.tif) files.
 
 ![](figs/pop2010.png)
 
@@ -32,5 +32,5 @@ Downloading and reprocessing of the original data can be reproduced with the use
 References
 ----------
 
--   Original data source: <http://www.cger.nies.go.jp/gcp/population-and-gdp.html>
+-   Original data source: <https://warp.ndl.go.jp/web/20220409084331/cger.nies.go.jp/gcp/population-and-gdp.html>
 -   Murakami, D. and Yamagata, Y. (2016) Estimation of gridded population and GDP scenarios with spatially explicit statistical downscaling, ArXiv, 1610.09041, URL: <https://arxiv.org/abs/1610.09041>.
